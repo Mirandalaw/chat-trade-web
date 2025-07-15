@@ -1,0 +1,185 @@
+/* Register Page Specific Styles */
+.register-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FAF7F2 0%, #FDFCFB 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 28rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.register-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.register-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.register-subtitle {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.register-agreements {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.register-agree-all {
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.register-agreement-list {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1rem;
+}
+
+.agreement-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.agreement-checkbox-input {
+    display: flex;
+    align-items: center;
+    height: 1.25rem;
+}
+
+.agreement-checkbox-button {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.25rem;
+    border: 2px solid #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    background: white;
+    cursor: pointer;
+}
+
+.agreement-checkbox-button.checked {
+    background-color: #2BA87C;
+    border-color: #2BA87C;
+}
+
+.agreement-checkbox-button:hover {
+    border-color: #2BA87C;
+}
+
+.agreement-checkbox-icon {
+    width: 0.75rem;
+    height: 0.75rem;
+    color: white;
+}
+
+.agreement-checkbox-content {
+    flex: 1;
+}
+
+.agreement-checkbox-label {
+    font-size: 0.875rem;
+    color: #374151;
+    cursor: pointer;
+}
+
+.agreement-checkbox-required {
+    color: #ef4444;
+    margin-left: 0.25rem;
+}
+
+.agreement-checkbox-link {
+    color: #3A6F64;
+    font-size: 0.875rem;
+    text-decoration: underline;
+    margin-left: 0.25rem;
+    transition: color 0.2s ease;
+}
+
+.agreement-checkbox-link:hover {
+    color: #2BA87C;
+}
+
+.register-privacy-notice {
+    background-color: #eff6ff;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #bfdbfe;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.register-privacy-link {
+    color: #3A6F64;
+    text-decoration: underline;
+    margin-left: 0.25rem;
+    transition: color 0.2s ease;
+}
+
+.register-privacy-link:hover {
+    color: #2BA87C;
+}
+
+.register-next-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #2BA87C;
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.register-next-button:hover:not(:disabled) {
+    background-color: #249A6F;
+}
+
+.register-next-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.register-login-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.register-login-text {
+    color: #3A6F64;
+    font-size: 0.875rem;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.register-login-text:hover {
+    color: #2BA87C;
+}
