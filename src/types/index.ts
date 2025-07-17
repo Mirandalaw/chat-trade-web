@@ -42,6 +42,7 @@ export interface AuthContextType {
   isLoading: boolean;
 }
 
+
 export interface ChatContextType {
   chats: Chat[];
   activeChat: Chat | null;

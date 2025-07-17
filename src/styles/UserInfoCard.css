@@ -1,0 +1,127 @@
+.user-info-card {
+    background: linear-gradient(135deg, var(--accent-teal), var(--accent-coral));
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-5);
+    box-shadow: var(--shadow-md);
+}
+
+.user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-4);
+}
+
+.user-avatar-section {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: var(--font-size-lg);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.username {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+.user-grade {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    font-size: var(--font-size-sm);
+    opacity: 0.9;
+}
+
+.logout-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-2);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.logout-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.points-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.points-display-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.points-display {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.points-label {
+    font-size: var(--font-size-xs);
+    opacity: 0.8;
+}
+
+.points-value {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+}
+
+.action-buttons {
+    display: flex;
+    gap: var(--spacing-2);
+}
+
+.mypage-button,
+.upgrade-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-2) var(--spacing-3);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    flex: 1;
+    justify-content: center;
+}
+
+.mypage-button:hover,
+.upgrade-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}

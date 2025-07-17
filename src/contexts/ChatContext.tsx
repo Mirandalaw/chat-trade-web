@@ -118,10 +118,10 @@ export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
     }));
 
     // Update last message in chat
-    setChats(prev => prev.map(chat => 
-      chat.id === chatId 
-        ? { ...chat, lastMessage: content, lastMessageTime: new Date() }
-        : chat
+    setChats(prev => prev.map(chat =>
+        chat.id === chatId
+            ? { ...chat, lastMessage: content, lastMessageTime: new Date() }
+            : chat
     ));
   };
 
@@ -151,8 +151,8 @@ export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
   };
 
   return (
-    <ChatContext.Provider value={value}>
-      {children}
-    </ChatContext.Provider>
+      <ChatContext.Provider value={value}>
+        {children}
+      </ChatContext.Provider>
   );
 };

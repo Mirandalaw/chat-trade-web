@@ -1,0 +1,111 @@
+/* Membership Card Styles */
+.membership-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+}
+
+.membership-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.membership-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(to right, #f59e0b, #f97316);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-center: center;
+}
+
+.membership-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 0;
+}
+
+.membership-content {
+    margin-bottom: 1.5rem;
+}
+
+.membership-grade {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.membership-grade-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #f59e0b, #f97316);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.membership-stars {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.membership-benefits {
+    background-color: #f9fafb;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.membership-benefits h4 {
+    font-weight: 500;
+    color: #374151;
+    margin: 0 0 0.5rem 0;
+}
+
+.membership-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.membership-benefits li {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.25rem;
+}
+
+.membership-upgrade {
+    background: linear-gradient(to right, #ecfdf5, #d1fae5);
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
+
+.membership-upgrade h4 {
+    font-weight: 500;
+    color: #047857;
+    margin: 0 0 0.5rem 0;
+}
+
+.membership-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.membership-progress-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #059669;
+}
+
+.membership-progress-value {
+    font-weight: 500;
+}

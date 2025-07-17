@@ -1,0 +1,46 @@
+/* Mypage.module.css */
+
+.container {
+    min-height: 100vh;
+    background-color: #F8F1EC;
+}
+
+.main {
+    max-width: 80rem; /* max-w-7xl */
+    margin: 0 auto;
+    padding: 2rem 1.5rem; /* px-6 py-8 */
+}
+
+.gridLayout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .gridLayout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .left {
+        grid-column: span 2;
+    }
+}
+
+.cardRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .cardRow {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

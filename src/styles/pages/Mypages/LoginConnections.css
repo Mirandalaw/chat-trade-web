@@ -1,0 +1,107 @@
+/* Login Connections Styles */
+.connections-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+}
+
+.connections-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.connections-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(to right, #6366f1, #4f46e5);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connections-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 0;
+}
+
+.connections-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.connection-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background-color: #f9fafb;
+    border-radius: 0.75rem;
+}
+
+.connection-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.connection-icon {
+    font-size: 1.125rem;
+}
+
+.connection-name {
+    font-weight: 500;
+    color: #374151;
+}
+
+.connection-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.connection-connected {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #059669;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.connection-disconnect {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.connection-disconnect:hover {
+    color: #374151;
+}
+
+.connection-connect {
+    padding: 0.5rem 1rem;
+    background-color: #f97316;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.connection-connect:hover {
+    background-color: #ea580c;
+}

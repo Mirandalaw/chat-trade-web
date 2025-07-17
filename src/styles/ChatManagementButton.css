@@ -1,0 +1,221 @@
+.chat-management-button {
+    position: fixed;
+    bottom: var(--spacing-6);
+    right: var(--spacing-6);
+    z-index: 1000;
+}
+
+.floating-button {
+    width: 60px;
+    height: 60px;
+    background: var(--accent-coral);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.floating-button:hover {
+    background: #ff6b47;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+}
+
+.unread-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--accent-red);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    padding: var(--spacing-1) var(--spacing-2);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+    border: 2px solid var(--white);
+}
+
+.drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+}
+
+.chat-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: var(--shadow-xl);
+    z-index: 1002;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-4) var(--spacing-5);
+    border-bottom: 1px solid var(--gray-200);
+    background: var(--gray-50);
+}
+
+.drawer-header h3 {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    color: var(--gray-800);
+    font-weight: 600;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--gray-600);
+    padding: var(--spacing-2);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+}
+
+.close-button:hover {
+    background: var(--gray-200);
+    color: var(--gray-800);
+}
+
+.drawer-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-8);
+    text-align: center;
+    color: var(--gray-500);
+    height: 100%;
+}
+
+.empty-state p {
+    margin-top: var(--spacing-4);
+    font-size: var(--font-size-base);
+}
+
+.chat-list {
+    padding: var(--spacing-2);
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-3);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.chat-item:hover {
+    background: var(--gray-50);
+}
+
+.chat-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: var(--radius-full);
+    background: var(--accent-coral);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    flex-shrink: 0;
+}
+
+.chat-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.chat-header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-1);
+}
+
+.chat-name {
+    font-weight: 600;
+    color: var(--gray-800);
+    font-size: var(--font-size-base);
+}
+
+.chat-time {
+    font-size: var(--font-size-xs);
+    color: var(--gray-500);
+}
+
+.chat-last-message {
+    font-size: var(--font-size-sm);
+    color: var(--gray-600);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.chat-unread-badge {
+    background: var(--accent-red);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    padding: var(--spacing-1) var(--spacing-2);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .chat-drawer {
+        width: 100%;
+    }
+
+    .chat-management-button {
+        bottom: var(--spacing-4);
+        right: var(--spacing-4);
+    }
+
+    .floating-button {
+        width: 56px;
+        height: 56px;
+    }
+}

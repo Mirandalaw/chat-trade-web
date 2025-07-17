@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check } from 'lucide-react';
+import {Check} from 'lucide-react';
 
 interface AgreementCheckboxProps {
     checked: boolean;
@@ -30,7 +30,7 @@ export const AgreementCheckbox: React.FC<AgreementCheckboxProps> = ({
                             : 'border-gray-300 hover:border-[#2BA87C]'
                     }`}
                 >
-                    {checked && <Check className="w-3 h-3 text-white" />}
+                    {checked && <Check className="w-3 h-3 text-white"/>}
                 </button>
             </div>
             <div className="flex-1">

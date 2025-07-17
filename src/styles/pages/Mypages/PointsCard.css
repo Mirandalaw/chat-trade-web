@@ -1,0 +1,92 @@
+/* Points Card Styles */
+.points-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+}
+
+.points-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.points-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(to right, #10b981, #059669);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.points-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 0;
+}
+
+.points-balance {
+    margin-bottom: 1.5rem;
+}
+
+.points-amount {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.points-amount-value {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #374151;
+}
+
+.points-amount-unit {
+    font-size: 1.125rem;
+    color: #6b7280;
+}
+
+.points-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.points-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.points-button {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.points-button-charge {
+    background: linear-gradient(to right, #10b981, #059669);
+    color: white;
+}
+
+.points-button-charge:hover {
+    background: linear-gradient(to right, #047857, #065f46);
+}
+
+.points-button-withdraw {
+    background-color: #f97316;
+    color: white;
+}
+
+.points-button-withdraw:hover {
+    background-color: #ea580c;
+}

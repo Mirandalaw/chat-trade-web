@@ -8,6 +8,8 @@ import Home from './pages/Home';
 import ChatRoom from './pages/ChatRoom';
 import {ResetPasswordPage} from "./pages/ResetPasswordPage.tsx";
 import RegisterPage from "./pages/RegisterPage.tsx";
+import {RegisterStep2} from "./pages/RegisterStep2.tsx";
+import Mypage from "./pages/MyPage.tsx";
 
 const App: React.FC = () => {
     return (
@@ -18,6 +20,7 @@ const App: React.FC = () => {
                         <Route path="/login" element={<Login />} />
                         <Route path="/reset-password" element={<ResetPasswordPage  />} />
                         <Route path="/register" element={<RegisterPage />} />
+                        <Route path="/register/step2" element={<RegisterStep2 />} />
                         <Route path="/" element={
                             <ProtectedRoute>
                                 <Home />
@@ -26,6 +29,11 @@ const App: React.FC = () => {
                         <Route path="/chat/:chatId" element={
                             <ProtectedRoute>
                                 <ChatRoom />
+                            </ProtectedRoute>
+                        } />
+                        <Route path="/mypage" element={
+                            <ProtectedRoute>
+                                <Mypage />
                             </ProtectedRoute>
                         } />
                     </Routes>
